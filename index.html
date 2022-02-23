@@ -1,0 +1,297 @@
+<!--co-written by Vivian Phillips and Monica Tan-->
+<DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+</head>
+<body>
+<main class="container">
+  <h1 id="title"> Pet Selection Survey Form</h1>
+   <p id="description">Help us find out which pets are best for people</p>
+   <form id="survey-form" action="placeholder">
+    
+     <label id="name-label" class="labelstyle" for="name">Name</label>
+      <input 
+         id="name"
+         class="fieldstyle1"
+         type="text" 
+         placeholder="Your name here"
+         required
+         
+         >
+     <label id="email-label" class="labelstyle" for="email">Email</label>
+      <input 
+         id="email"
+         class="fieldstyle1"
+         type="email" 
+         placeholder="Your email here"
+         required
+         >
+     <label id="number-label" class="labelstyle" for="number">Age</label> 
+      <input 
+         id="number"
+         class="fieldstyle1"
+         type="number"
+         min="16"
+         max="101"              
+         placeholder="Your age here"
+         >
+
+         
+           
+   <div class="form">
+     <p> Please select employment status </p> 
+         <select id="dropdown"
+          class="job"
+          required
+         >
+     <option disabled selected value>Select employment status</option>
+     <option value="full-time">Full-time job</option>
+     <option value="part-time">Part-time job</option>
+     <option value="unemployed">Unemployed</option>
+     <option value="student">Student</option>
+     <option value="other">Other</option>
+   </select>
+
+   
+     <div class="radio-buttons">
+     <p> Please choose your personality type:</p>  
+     <label for="calm"><input id="calm" value="calm" type="radio" name="disposition">Calm</label>
+     <label for="energetic"><input id="energetic" value="energetic" type="radio" name="disposition">Energetic</label>
+     </div>
+   
+     <div class="checkboxes">
+       <p> Select which pets you own:</p>
+     <label for="dog"><input id="dog" value="dog" type="checkbox" name="pets">Dog</label>
+     <label for="cat"><input id="cat" value="cat" type="checkbox" name="pets">Cat</label>
+     <label for="rodent"><input id="rodent" value="rodent" type="checkbox" name="pets">Rodent</label>
+     <label for="hedgehog"><input id="hedgehog" value="hedgehog" type="checkbox" name="pets">Hedgehog</label>
+     <label for="reptile"><input id="reptile" value="reptile" type="checkbox" name="pets">Reptile</label>
+     <label for="bird"><input id="bird" value="bird" type="checkbox" name="pets">Bird</label>
+       <label for="fish"><input id="fish" value="fish" type="checkbox" name="pets">Fish</label>
+     <label for="other"><input id="other" value="other" type="checkbox" name="pets">Other</label>
+     </div>
+    
+    <div> 
+      <p>Tell us about your experience owning pets:</p>
+      <textarea id="other-details" name="details" placeholder="Type Here"></textarea>
+      
+    </div>
+    <div>
+      
+      <button type="submit" id="submit">Submit</button>
+      
+    </div>
+      
+     
+</form>
+     
+</div>   
+   
+</main>
+</html>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Poppins&display=swap');
+
+#title {
+       text-align: center;
+       font-family:Poppins;
+       font-size: 45px;
+       background-color: #235c40;
+       padding-bottom: 40px;
+       padding-top: -40px;
+       color: #fafafa;
+       margin-top: -43px;
+       margin-left: -9999rem;
+       margin-right: -9999rem;
+       height: 105px;
+       
+}    
+      
+#description {
+        text-align: center;
+        color: #f7f2f2;
+        font-family: Poppins;
+        font-size: 20px;
+        margin-top: -65px;       
+        margin-bottom: 60px;
+        
+        
+                
+         
+}
+
+body {
+        background: url(https://i.pinimg.com/originals/96/a8/a2/96a8a21f4581c98ea50bc325e527b84c.jpg) no-repeat center center fixed; 
+         -webkit-background-size: cover;
+            -moz-background-size: cover;
+         -o-background-size: cover;
+        background-size: cover;
+        background-color: rgba(127, 182, 144, 0.979);
+        background-blend-mode: multiply;
+        padding: 80px;
+          
+    
+    }
+
+label {
+     display: flex;
+     align-items: center;
+     font-family: Heebo;
+     font-size: 23px;
+     font-weight: bold;
+     color: #fafafa;
+     line-height: 20px;
+     margin: 2px;  
+     
+      
+}
+
+#survey-form {
+        background-color: #04201362;
+        margin: 30px;
+        padding: 30px 50px 50px 50px;
+        border: 2px solid #03080e;
+        border-radius: 10px;
+        width: 650px;
+        margin: 0 auto;
+        max-width: 100%;     
+        
+        
+  
+}
+  
+  .fieldstyle1 {
+        margin: 10px auto;
+        height: 40px;
+        max-width: 100%;
+        width: 650px;
+        font-family: Heebo;
+        font-size: 17px;
+        border-radius: 5px;
+        border-color: rgb(158, 176, 197);
+        
+                
+    }
+  
+  .form {
+        font-family: Heebo;
+        font-size: 23px;
+        font-weight: bold;
+    max-width: 100%;
+              
+    }
+  
+  #dropdown {
+        position: relative;
+        bottom: 12px;
+        padding: 5px;
+        max-width: 100%;
+        width: 335px;
+        font-family: Heebo;
+        border-radius: 5px;
+        font-size: 17px;
+    
+    
+    }
+
+
+p {
+  color: #fafafa;
+  padding-top: 20px;
+}
+
+.labelstyle {
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+  #other-details{
+  width: 547px;
+  height: 150px;
+  font-family: heebo;
+  font-size: 18px;
+  border-radius: 2px;
+  max-width: 100%
+}
+
+
+ input[type="radio"]{margin: 10px 0} 
+ input[type="checkbox"]{margin: 10px 0}
+
+
+.radio-buttons label {
+  display: flexbox;
+  background-color: #fafafa;
+  padding: 4px 11px;
+  gap: 5px;
+  max-width: 100%;
+  width: 365px;
+  font-family: Heebo;
+  font-size: 17px;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 5px;
+  
+}
+
+.checkboxes label {
+  display: flexbox;
+  background-color: #fafafa;
+  color: #000000;
+  padding: 4px 11px;
+  gap: 5px;
+  max-width: 100%;
+  width: 270px;
+  font-family: Heebo;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.radio-buttons input[type="radio"]:checked+label {
+  background-color: #fafafa;
+  
+}
+
+.checkboxes input[type="checkbox"]:checked+label {
+  background-color: #fafafa;
+}
+
+
+#submit {
+    position: relative;
+    top: 3px;
+    width: 95px;
+    font-family: Heebo;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 17px;
+    display: inline-block;
+    float: right;
+    
+    
+}
+  
+
+
+#submit:hover {
+   background-color: #84D18C;
+   
+}
+
+.radio-buttons label:hover {
+   background-color: #84D18C;
+}
+
+.checkboxes label:hover {
+  background-color: #84D18C;
+}
+
+</style>
